@@ -1,0 +1,40 @@
+user_response = 0  
+
+def begin_story(): 
+    user_name = input("Please enter your name")
+    print('Youre an illegal trying to cross the border. \
+    What do you do?')
+    print('Enter the number that corresponds to your decision')
+    user_response = input('1. Ask the border patrol officer to let you in the country. \n \
+                          2. You punch the man. \n3. You jump the wall like a good mexican.')
+    elevator()
+
+def elevator():
+    #1. You ask the officer to let you in the country. 
+    if (user_response == 1):
+        print("No you cant get in")
+        user_response = input("1. you realize you are waste of oxygen and go back home")
+
+    #2. You punch the man. 
+    elif (user_response == 2):
+        print('Your fist phased through as the man just stands and watches. The man says\
+        "  ', user_name, ' ')
+        user_response = input("Choices TBD")
+
+    #3. You say hi to him'
+    elif (user_response == 3):
+        print('The man says "Good, you can see me! Look', user_name, 'I need your help.')
+        user_response = input("Choices TBD")
+        
+    else:
+        error()
+        
+def error():
+    if(user_input == 'e'):
+        print("easter egg :D")
+    else:
+        print("Nice try! Now comply with the rules!")
+        #add code to repeat gather user input
+
+user_response = 0
+begin_story()
