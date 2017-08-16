@@ -13,13 +13,11 @@ def elevator():
     #1. You ask the officer to let you in the country. 
     if (user_response == 1):
         print("No you cant get in")
-        user_response = input("1. you realize you are waste of oxygen and go back home")
+        user_response = input("1. you realize you are waste of space and go back home")
 
     #2. You punch the man. 
     elif (user_response == 2):
-        print('Your fist phased through as the man just stands and watches. The man says\
-        "  ', user_name, ' ')
-        user_response = input("Choices TBD")
+        print('the guy gets back up and shoots you')
 
     #3. You say hi to him'
     elif (user_response == 3):
